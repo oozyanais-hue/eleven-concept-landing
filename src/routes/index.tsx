@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { MissionSection } from "@/components/MissionSection";
+import { GallerySection } from "@/components/GallerySection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
+import { ProcessSection } from "@/components/ProcessSection";
 import { PlansSection } from "@/components/PlansSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -43,7 +45,9 @@ function Index() {
       <Navbar />
       <HeroSection />
       <MissionSection />
+      <GallerySection />
       <DifferentialsSection />
+      <ProcessSection />
       <PlansSection />
       <TestimonialsSection />
       <ContactSection />
