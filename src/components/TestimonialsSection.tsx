@@ -1,6 +1,9 @@
 import heroImg from "@/assets/hero-interior.jpg";
 import diningImg from "@/assets/dining-luxury.jpg";
 import closetImg from "@/assets/closet-luxury.jpg";
+import hallwayImg from "@/assets/hallway-luxury.jpg";
+import balconyImg from "@/assets/balcony-luxury.jpg";
+import wineCellarImg from "@/assets/wine-cellar.jpg";
 
 {/* <!-- Substituir por depoimentos reais --> */}
 const testimonials = [
@@ -24,6 +27,12 @@ const testimonials = [
   },
 ];
 
+const beforeAfter = [
+  { src: hallwayImg, label: "Projeto Hall — Entregue" },
+  { src: balconyImg, label: "Varanda Gourmet — Entregue" },
+  { src: wineCellarImg, label: "Adega Personalizada — Entregue" },
+];
+
 export function TestimonialsSection() {
   return (
     <section id="depoimentos" className="py-24 md:py-32 px-6 bg-surface-light">
@@ -36,7 +45,7 @@ export function TestimonialsSection() {
           <div className="w-20 h-px bg-gold/40 mx-auto mt-6" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
           {testimonials.map((t, i) => (
             <div
               key={i}
@@ -57,6 +66,23 @@ export function TestimonialsSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Additional project showcase */}
+        <div className="animate-on-scroll">
+          <h3 className="text-center font-heading text-2xl text-cream mb-8 font-light">Projetos <span className="gold-text-gradient italic">recentes</span></h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            {beforeAfter.map((item, i) => (
+              <div key={i} className="relative overflow-hidden group h-56" style={{ transitionDelay: `${i * 100}ms` }}>
+                <img src={item.src} alt={item.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-6 h-px bg-gold mb-2" />
+                  <span className="text-cream font-body text-sm">{item.label}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
