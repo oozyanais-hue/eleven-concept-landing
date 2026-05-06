@@ -1,26 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
+import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import { MissionSection } from "@/components/MissionSection";
+import { DifferentialsSection } from "@/components/DifferentialsSection";
+import { PlansSection } from "@/components/PlansSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { ContactSection } from "@/components/ContactSection";
+import { FooterSection } from "@/components/FooterSection";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Eleven Concept — Móveis Planejados de Alto Padrão" },
+      { name: "description", content: "Móveis planejados e projetos completos de alto padrão. Do design à entrega, sem intermediários. Eleven Concept." },
+      { property: "og:title", content: "Eleven Concept — Móveis Planejados de Alto Padrão" },
+      { property: "og:description", content: "Móveis planejados e projetos completos de alto padrão. Do design à entrega, sem intermediários." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <HeroSection />
+      <MissionSection />
+      <DifferentialsSection />
+      <PlansSection />
+      <TestimonialsSection />
+      <ContactSection />
+      <FooterSection />
+    </>
+  );
 }
