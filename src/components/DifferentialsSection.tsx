@@ -1,13 +1,13 @@
-import detailImg from "@/assets/detail-luxury.jpg";
 import officeImg from "@/assets/office-luxury.jpg";
-import craftImg from "@/assets/craft-detail.jpg";
-import mediaImg from "@/assets/media-room.jpg";
+import closetImg from "@/assets/closet-luxury.jpg";
+import poolImg from "@/assets/pool-luxury.jpg";
+import exteriorImg from "@/assets/exterior-lighting.jpg";
 
 const diffs = [
-  { icon: "✦", title: "Projeto completo e personalizado", desc: "Cada detalhe pensado exclusivamente para o seu espaço.", image: craftImg },
-  { icon: "✦", title: "Gestão total da obra", desc: "Acompanhamento integral, sem preocupações para você.", image: mediaImg },
+  { icon: "✦", title: "Projeto completo e personalizado", desc: "Cada detalhe pensado exclusivamente para o seu espaço.", image: exteriorImg },
+  { icon: "✦", title: "Gestão total da obra", desc: "Acompanhamento integral, sem preocupações para você.", image: poolImg },
   { icon: "✦", title: "Rede de parceiros qualificados", desc: "Piso, gesso, marmoraria — tudo integrado ao seu projeto.", image: officeImg },
-  { icon: "✦", title: "Entrega final pronta para uso", desc: "Você recebe o ambiente completo, impecável, sem pendências.", image: detailImg },
+  { icon: "✦", title: "Entrega final pronta para uso", desc: "Você recebe o ambiente completo, impecável, sem pendências.", image: closetImg },
 ];
 
 export function DifferentialsSection() {
@@ -25,7 +25,7 @@ export function DifferentialsSection() {
         {/* Hero statement with images */}
         <div className="grid lg:grid-cols-3 gap-4 mb-12">
           <div className="animate-on-scroll relative overflow-hidden h-64 lg:h-auto">
-            <img src={detailImg} alt="Detalhes premium" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+            <img src={closetImg} alt="Closet premium" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
             <div className="absolute inset-0 bg-background/30" />
           </div>
           <div className="animate-on-scroll flex items-center justify-center py-12 border border-gold/20 bg-surface" style={{ transitionDelay: "100ms" }}>
