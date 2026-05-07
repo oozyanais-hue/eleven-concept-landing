@@ -7,16 +7,23 @@ import balconyImg from "@/assets/balcony-luxury.jpg";
 import kitchenImg from "@/assets/kitchen-luxury.jpg";
 import bathroomImg from "@/assets/bathroom-luxury.jpg";
 import closetImg from "@/assets/closet-luxury.jpg";
+import exteriorImg from "@/assets/exterior-lighting.jpg";
+import bedroomImg from "@/assets/bedroom-luxury.jpg";
+import diningImg from "@/assets/dining-luxury.jpg";
+import heroImg from "@/assets/hero-interior.jpg";
 
 const gallery = [
   { src: kitchenImg, label: "Cozinha Gourmet", span: "col-span-2 row-span-2" },
   { src: hallwayImg, label: "Hall de Entrada", span: "" },
   { src: bathroomImg, label: "Banheiro Master", span: "" },
-  { src: mediaImg, label: "Sala de TV", span: "col-span-2" },
-  { src: wineCellarImg, label: "Adega", span: "" },
+  { src: heroImg, label: "Living Room", span: "col-span-2" },
+  { src: exteriorImg, label: "Iluminação Exterior", span: "" },
   { src: laundryImg, label: "Lavanderia", span: "" },
-  { src: kidsImg, label: "Suíte Jovem", span: "" },
+  { src: bedroomImg, label: "Suíte Master", span: "" },
   { src: closetImg, label: "Closet", span: "" },
+  { src: diningImg, label: "Sala de Jantar", span: "col-span-2" },
+  { src: mediaImg, label: "Sala de TV", span: "" },
+  { src: wineCellarImg, label: "Adega", span: "" },
   { src: balconyImg, label: "Varanda Gourmet", span: "col-span-2" },
 ];
 
