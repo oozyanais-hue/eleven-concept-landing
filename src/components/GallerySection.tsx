@@ -16,11 +16,14 @@ const gallery = [
   { src: kitchenImg, label: "Cozinha Gourmet", span: "col-span-2 row-span-2" },
   { src: hallwayImg, label: "Hall de Entrada", span: "" },
   { src: bathroomImg, label: "Banheiro Master", span: "" },
-  { src: mediaImg, label: "Sala de TV", span: "col-span-2" },
-  { src: wineCellarImg, label: "Adega", span: "" },
+  { src: heroImg, label: "Living Room", span: "col-span-2" },
+  { src: exteriorImg, label: "Iluminação Exterior", span: "" },
   { src: laundryImg, label: "Lavanderia", span: "" },
-  { src: kidsImg, label: "Suíte Jovem", span: "" },
+  { src: bedroomImg, label: "Suíte Master", span: "" },
   { src: closetImg, label: "Closet", span: "" },
+  { src: diningImg, label: "Sala de Jantar", span: "col-span-2" },
+  { src: mediaImg, label: "Sala de TV", span: "" },
+  { src: wineCellarImg, label: "Adega", span: "" },
   { src: balconyImg, label: "Varanda Gourmet", span: "col-span-2" },
 ];
 
