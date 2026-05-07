@@ -1,6 +1,6 @@
-import craftImg from "@/assets/craft-detail.jpg";
+import exteriorImg from "@/assets/exterior-lighting.jpg";
 import hallwayImg from "@/assets/hallway-luxury.jpg";
-import balconyImg from "@/assets/balcony-luxury.jpg";
+import poolImg from "@/assets/pool-luxury.jpg";
 
 const stats = [
   { number: "500+", label: "Projetos entregues" },
@@ -14,7 +14,7 @@ export function ProcessSection() {
     <section className="py-24 md:py-32 px-6 relative overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={balconyImg} alt="" className="w-full h-full object-cover opacity-15" loading="lazy" width={1920} height={768} />
+        <img src={poolImg} alt="" className="w-full h-full object-cover opacity-15" loading="lazy" width={1024} height={1024} />
         <div className="absolute inset-0 bg-background/85" />
       </div>
 
@@ -30,7 +30,7 @@ export function ProcessSection() {
         {/* Images row */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           <div className="animate-on-scroll relative overflow-hidden group">
-            <img src={craftImg} alt="Detalhes de acabamento" className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+            <img src={exteriorImg} alt="Iluminação exterior premium" className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             <div className="absolute bottom-6 left-6">
               <span className="text-gold text-xs tracking-[0.3em] uppercase font-body">Materiais Premium</span>

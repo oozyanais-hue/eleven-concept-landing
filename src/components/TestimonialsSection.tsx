@@ -2,10 +2,9 @@ import heroImg from "@/assets/hero-interior.jpg";
 import diningImg from "@/assets/dining-luxury.jpg";
 import closetImg from "@/assets/closet-luxury.jpg";
 import hallwayImg from "@/assets/hallway-luxury.jpg";
-import balconyImg from "@/assets/balcony-luxury.jpg";
+import poolImg from "@/assets/pool-luxury.jpg";
 import wineCellarImg from "@/assets/wine-cellar.jpg";
 
-{/* <!-- Substituir por depoimentos reais --> */}
 const testimonials = [
   {
     quote: "A Eleven Concept transformou nosso apartamento em algo que nem imaginávamos ser possível. Cada detalhe foi pensado com um cuidado que impressiona.",
@@ -29,7 +28,7 @@ const testimonials = [
 
 const beforeAfter = [
   { src: hallwayImg, label: "Projeto Hall — Entregue" },
-  { src: balconyImg, label: "Varanda Gourmet — Entregue" },
+  { src: poolImg, label: "Área de Lazer — Entregue" },
   { src: wineCellarImg, label: "Adega Personalizada — Entregue" },
 ];
 
