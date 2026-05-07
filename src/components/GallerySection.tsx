@@ -7,6 +7,10 @@ import balconyImg from "@/assets/balcony-luxury.jpg";
 import kitchenImg from "@/assets/kitchen-luxury.jpg";
 import bathroomImg from "@/assets/bathroom-luxury.jpg";
 import closetImg from "@/assets/closet-luxury.jpg";
+import exteriorImg from "@/assets/exterior-lighting.jpg";
+import bedroomImg from "@/assets/bedroom-luxury.jpg";
+import diningImg from "@/assets/dining-luxury.jpg";
+import heroImg from "@/assets/hero-interior.jpg";
 
 const gallery = [
   { src: kitchenImg, label: "Cozinha Gourmet", span: "col-span-2 row-span-2" },
