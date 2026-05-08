@@ -162,3 +162,9 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+#lovable-badge,
+[id*="lovable-badge"],
+a[href*="lovable.dev"] {
+  display: none !important;
+}
