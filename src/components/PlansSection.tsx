@@ -1,42 +1,42 @@
-import bathroomImg from "@/assets/bathroom-luxury.jpg";
-import kitchenImg from "@/assets/kitchen-luxury.jpg";
-import bedroomImg from "@/assets/bedroom-luxury.jpg";
-import closetImg from "@/assets/closet-luxury.jpg";
-import diningImg from "@/assets/dining-luxury.jpg";
+import planEssential from "@/assets/plan-essential.png";
+import planSelect from "@/assets/plan-select.png";
+import planSignature from "@/assets/plan-signature.png";
+import planPremium from "@/assets/plan-premium.png";
+import planElite from "@/assets/plan-elite.png";
 
 const plans = [
   {
     name: "Essential",
     badge: "Entrada",
-    image: bathroomImg,
+    image: planEssential,
     items: ["Piso laminado", "Móveis planejados brancos na cozinha", "Dormitórios planejados", "Gabinetes dos banheiros"],
     highlighted: false,
   },
   {
     name: "Select",
     badge: "Intermediário",
-    image: kitchenImg,
+    image: planSelect,
     items: ["Piso vinílico ou porcelanato", "Móveis com cor ou amadeirado (exclusivas Henzel)", "Granito na cozinha e banheiros", "Rebaixamento em gesso", "Box nos banheiros"],
     highlighted: false,
   },
   {
     name: "Signature",
     badge: "Mais escolhido",
-    image: bedroomImg,
-    items: ["Porcelanato premium", "Móveis com cores e usinagens elaboradas", "Mármore na cozinha e banheiros", "Maior quantidade de armários", "Gesso, pintura e box"],
+    image: planSignature,
+    items: ["Porcelanato premium", "Móveis com cores e usinagens elaboradas", "Quartzo na cozinha e banheiros", "Maior quantidade de armários", "Gesso, pintura e box"],
     highlighted: true,
   },
   {
     name: "Premium",
     badge: "Alto padrão",
-    image: closetImg,
+    image: planPremium,
     items: ["Totalmente personalizado", "Todos os cômodos", "Portas reflectas e vidro", "Quartzo", "Iluminação completa", "Gesso, pintura e box"],
     highlighted: false,
   },
   {
     name: "Elite",
     badge: "Exclusivo",
-    image: diningImg,
+    image: planElite,
     items: ["Tudo do Premium incluído", "Automação residencial completa", "Integração total do imóvel", "Experiência sob medida"],
     highlighted: false,
   },

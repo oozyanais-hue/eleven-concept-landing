@@ -7,7 +7,6 @@ import { GallerySection } from "@/components/GallerySection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { PlansSection } from "@/components/PlansSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { FooterSection } from "@/components/FooterSection";
 
@@ -49,7 +48,6 @@ function Index() {
       <DifferentialsSection />
       <ProcessSection />
       <PlansSection />
-      <TestimonialsSection />
       <ContactSection />
       <FooterSection />
     </>
