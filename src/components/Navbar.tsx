@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { BrandLogo } from "./BrandLogo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,8 +33,8 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <button onClick={() => handleClick("#hero")} className="font-heading text-xl tracking-[0.3em] text-gold font-semibold">
-          EC <span className="text-foreground/50">|</span> <span className="text-foreground text-sm tracking-[0.2em]">ELEVEN CONCEPT</span>
+        <button onClick={() => handleClick("#hero")} aria-label="Bella Itália — Início">
+          <BrandLogo size="sm" />
         </button>
 
         {/* Desktop */}

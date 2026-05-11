@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-interior.jpg";
+import { BrandLogo } from "./BrandLogo";
 
 export function HeroSection() {
   const scrollToContact = () => {
@@ -16,20 +17,28 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6 animate-fade-in-up">
-        <div className="mb-8">
-          <span className="font-heading text-3xl md:text-4xl tracking-[0.4em] gold-text-gradient font-semibold">EC</span>
-          <div className="w-16 h-px bg-gold mx-auto my-4 opacity-60" />
-          <span className="text-sm tracking-[0.5em] text-muted-foreground uppercase font-body">Eleven Concept</span>
+        <div className="mb-10 flex flex-col items-center">
+          <BrandLogo size="lg" showText={false} />
+          <div className="w-16 h-px bg-gold mx-auto my-5 opacity-60" />
+          <span className="font-heading text-2xl md:text-3xl text-cream tracking-[0.25em] uppercase font-medium">
+            Bella <span className="italic gold-text-gradient">Itália</span>
+          </span>
+          <span className="text-[10px] md:text-xs tracking-[0.5em] text-muted-foreground uppercase font-body mt-2">
+            Ambientes Personalizados
+          </span>
         </div>
 
         <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-light leading-tight mb-6 text-cream">
-          Do projeto à entrega final.
+          Elevamos o conceito do seu ambiente
           <br />
-          <span className="gold-text-gradient font-medium italic">Do conceito ao nível 11.</span>
+          <span className="gold-text-gradient font-medium italic">ao nível 11</span>
+          <span className="block text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light mt-4 not-italic">
+            — do projeto à entrega final
+          </span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-body font-light leading-relaxed">
-          Móveis planejados e projetos completos de alto padrão — do design à entrega, sem intermediários.
+        <p className="text-lg md:text-xl text-cream/80 max-w-2xl mx-auto mb-10 font-body font-light leading-relaxed">
+          Pare de perder tempo com vários fornecedores — <span className="text-gold">nós resolvemos tudo para você</span>.
         </p>
 
         <button
