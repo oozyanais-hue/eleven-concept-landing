@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { BrandLogo } from "./BrandLogo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
