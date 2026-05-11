@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-interior.jpg";
+import { BrandLogo } from "./BrandLogo";
 
 export function HeroSection() {
   const scrollToContact = () => {
