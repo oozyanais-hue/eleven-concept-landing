@@ -1,22 +1,22 @@
-import kitchenImg from "@/assets/kitchen-luxury.jpg";
-import bedroomImg from "@/assets/bedroom-luxury.jpg";
-import closetImg from "@/assets/closet-luxury.jpg";
+import missionImg from "@/assets/mission-kitchen.jpg";
+import visionImg from "@/assets/vision-kitchen.jpg";
+import valuesImg from "@/assets/values-living.jpg";
 
 const cards = [
   {
     title: "Missão",
-    text: "Transformar ideias em ambientes únicos e funcionais, com qualidade, inovação e atenção aos detalhes.",
-    image: kitchenImg,
+    text: "Prover ao cliente uma experiência de reforma completa, integrada e sem complicações, reunindo projeto, gesso, marmoraria e móveis planejados sob uma gestão única e especializada — eliminando a necessidade de múltiplos fornecedores, garantindo excelência técnica em cada etapa e entregando ambientes que traduzem o mais alto padrão de qualidade, com o compromisso de que cada cliente viva sua transformação com segurança, agilidade e total tranquilidade.",
+    image: missionImg,
   },
   {
     title: "Visão",
     text: "Ser referência em móveis planejados e decoração, reconhecida por sofisticação, exclusividade e excelência no atendimento.",
-    image: bedroomImg,
+    image: visionImg,
   },
   {
     title: "Valores",
     text: "",
-    image: closetImg,
+    image: valuesImg,
     values: [
       { name: "Exclusividade Absoluta", desc: "Cada projeto é uma obra única" },
       { name: "Design Autoral", desc: "Identidade, elegância e originalidade" },
