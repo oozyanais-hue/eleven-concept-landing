@@ -1,29 +1,25 @@
-import hallwayImg from "@/assets/hallway-luxury.jpg";
-import wineCellarImg from "@/assets/wine-cellar.jpg";
-import laundryImg from "@/assets/laundry-luxury.jpg";
-import kitchenImg from "@/assets/kitchen-luxury.jpg";
-import bathroomImg from "@/assets/bathroom-luxury.jpg";
-import closetImg from "@/assets/closet-luxury.jpg";
-import exteriorImg from "@/assets/exterior-lighting.jpg";
-import bedroomImg from "@/assets/bedroom-luxury.jpg";
-import diningImg from "@/assets/dining-luxury.jpg";
-import heroImg from "@/assets/hero-interior.jpg";
-import officeImg from "@/assets/office-luxury.jpg";
-import poolImg from "@/assets/pool-luxury.jpg";
+import g01 from "@/assets/gallery-01.jpg";
+import g02 from "@/assets/gallery-02.jpg";
+import g03 from "@/assets/gallery-03.jpg";
+import g04 from "@/assets/gallery-04.jpg";
+import g05 from "@/assets/gallery-05.jpg";
+import g06 from "@/assets/gallery-06.jpg";
+import g07 from "@/assets/gallery-07.jpg";
+import g08 from "@/assets/gallery-08.jpg";
+import g09 from "@/assets/gallery-09.jpg";
+import g10 from "@/assets/gallery-10.jpg";
 
 const gallery = [
-  { src: kitchenImg, label: "Cozinha Gourmet", span: "col-span-2 row-span-2" },
-  { src: hallwayImg, label: "Hall de Entrada", span: "" },
-  { src: bathroomImg, label: "Banheiro Master", span: "" },
-  { src: heroImg, label: "Living Room", span: "col-span-2" },
-  { src: exteriorImg, label: "Iluminação Exterior", span: "" },
-  { src: laundryImg, label: "Lavanderia", span: "" },
-  { src: bedroomImg, label: "Suíte Master", span: "" },
-  { src: closetImg, label: "Closet", span: "" },
-  { src: diningImg, label: "Sala de Jantar", span: "col-span-2" },
-  { src: poolImg, label: "Área de Lazer", span: "" },
-  { src: wineCellarImg, label: "Adega", span: "" },
-  { src: officeImg, label: "Home Office", span: "col-span-2" },
+  { src: g01, label: "Cozinha Gourmet", span: "col-span-2 row-span-2" },
+  { src: g02, label: "Living & Adega", span: "col-span-2" },
+  { src: g03, label: "Suíte Master", span: "" },
+  { src: g04, label: "Cozinha & Lavanderia", span: "" },
+  { src: g05, label: "Sala de Estar", span: "col-span-2" },
+  { src: g06, label: "Sala de Jantar", span: "" },
+  { src: g07, label: "Cozinha Planejada", span: "" },
+  { src: g08, label: "Suíte com Closet", span: "col-span-2" },
+  { src: g09, label: "Banheiro Master", span: "" },
+  { src: g10, label: "Home & Cozinha", span: "" },
 ];
 
 export function GallerySection() {
