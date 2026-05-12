@@ -3,8 +3,6 @@ import planSelect from "@/assets/plan-select.png";
 import planSignature from "@/assets/plan-signature.png";
 import planPremium from "@/assets/plan-premium.png";
 import planElite from "@/assets/plan-elite.png";
-import planCorporate from "@/assets/office-luxury.jpg";
-
 const plans = [
   {
     name: "Essential",
@@ -41,14 +39,54 @@ const plans = [
     items: ["Tudo do Premium incluído", "Automação residencial completa", "Integração total do imóvel", "Experiência sob medida"],
     highlighted: false,
   },
-  {
-    name: "Corporate",
-    badge: "Comercial",
-    image: planCorporate,
-    items: ["Projetos para escritórios e clínicas", "Mobiliário corporativo planejado", "Identidade visual integrada", "Gestão completa da obra comercial", "Soluções para recepção, salas e copa"],
-    highlighted: false,
-  },
 ];
+
+function PlanCard({ plan, index, onContact }: { plan: (typeof plans)[0]; index: number; onContact: () => void }) {
+  return (
+    <div
+      className={`animate-on-scroll flex flex-col bg-surface border overflow-hidden transition-all duration-500 hover:border-gold/50 ${
+        plan.highlighted ? "border-gold/60 gold-border-glow lg:scale-[1.03] relative" : "border-gold/15"
+      }`}
+      style={{ transitionDelay: `${index * 80}ms` }}
+    >
+      {plan.highlighted && (
+        <div className="gold-gradient text-primary-foreground text-xs text-center py-1.5 tracking-[0.3em] uppercase font-body font-medium">
+          ★ {plan.badge}
+        </div>
+      )}
+      <div className="relative h-72 overflow-hidden">
+        <img src={plan.image} alt={plan.name} className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+        <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+        <div className="absolute bottom-4 left-5">
+          <h3 className="font-heading text-3xl text-cream font-semibold drop-shadow-lg">{plan.name}</h3>
+          {!plan.highlighted && (
+            <span className="text-xs tracking-[0.2em] text-gold/90 uppercase font-body">{plan.badge}</span>
+          )}
+        </div>
+      </div>
+      <div className="p-6 flex-1 flex flex-col">
+        <ul className="space-y-2 flex-1 mb-5">
+          {plan.items.map((item, j) => (
+            <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground font-light">
+              <span className="text-gold text-xs mt-1">✦</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <button
+          onClick={onContact}
+          className={`w-full py-3 text-xs tracking-[0.2em] uppercase font-body font-medium transition-all duration-300 ${
+            plan.highlighted
+              ? "gold-gradient text-primary-foreground hover:opacity-90"
+              : "border border-gold/30 text-gold hover:bg-gold/10"
+          }`}
+        >
+          Solicitar orçamento
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export function PlansSection() {
   const scrollToContact = () => {
@@ -66,52 +104,17 @@ export function PlansSection() {
           <div className="w-20 h-px bg-gold/40 mx-auto mt-6" />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {plans.map((plan, i) => (
-            <div
-              key={i}
-              className={`animate-on-scroll flex flex-col bg-surface border overflow-hidden transition-all duration-500 hover:border-gold/50 ${
-                plan.highlighted ? "border-gold/60 gold-border-glow lg:scale-[1.03] relative" : "border-gold/15"
-              }`}
-              style={{ transitionDelay: `${i * 80}ms` }}
-            >
-              {plan.highlighted && (
-                <div className="gold-gradient text-primary-foreground text-xs text-center py-1.5 tracking-[0.3em] uppercase font-body font-medium">
-                  ★ {plan.badge}
-                </div>
-              )}
-              <div className="relative h-72 overflow-hidden">
-                <img src={plan.image} alt={plan.name} className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
-                <div className="absolute bottom-4 left-5">
-                  <h3 className="font-heading text-3xl text-cream font-semibold drop-shadow-lg">{plan.name}</h3>
-                  {!plan.highlighted && (
-                    <span className="text-xs tracking-[0.2em] text-gold/90 uppercase font-body">{plan.badge}</span>
-                  )}
-                </div>
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <ul className="space-y-2 flex-1 mb-5">
-                  {plan.items.map((item, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground font-light">
-                      <span className="text-gold text-xs mt-1">✦</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  onClick={scrollToContact}
-                  className={`w-full py-3 text-xs tracking-[0.2em] uppercase font-body font-medium transition-all duration-300 ${
-                    plan.highlighted
-                      ? "gold-gradient text-primary-foreground hover:opacity-90"
-                      : "border border-gold/30 text-gold hover:bg-gold/10"
-                  }`}
-                >
-                  Solicitar orçamento
-                </button>
-              </div>
-            </div>
-          ))}
+        <div className="flex flex-col gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {plans.slice(0, 3).map((plan, i) => (
+              <PlanCard key={i} plan={plan} index={i} onContact={scrollToContact} />
+            ))}
+          </div>
+          <div className="grid sm:grid-cols-2 gap-8 lg:w-2/3 mx-auto w-full">
+            {plans.slice(3).map((plan, i) => (
+              <PlanCard key={i + 3} plan={plan} index={i + 3} onContact={scrollToContact} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

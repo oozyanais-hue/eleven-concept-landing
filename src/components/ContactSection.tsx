@@ -2,7 +2,7 @@ import { useState } from "react";
 import bathroomImg from "@/assets/bathroom-luxury.jpg";
 
 {/* Número de WhatsApp - substitua pelo número real */}
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5515996184402";
 
 export function ContactSection() {
   const [name, setName] = useState("");
