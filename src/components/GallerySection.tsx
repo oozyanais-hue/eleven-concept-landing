@@ -9,6 +9,7 @@ import g08 from "@/assets/gallery-08.jpg";
 import g09 from "@/assets/gallery-09.jpg";
 import g10 from "@/assets/gallery-10.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { SwipeHint } from "@/components/SwipeHint";
 
 const gallery = [
   { src: g01, label: "Cozinha Gourmet" },
