@@ -2,6 +2,7 @@ import missionImg from "@/assets/mission-kitchen.jpg";
 import visionImg from "@/assets/vision-kitchen.jpg";
 import valuesImg from "@/assets/values-living.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { SwipeHint } from "@/components/SwipeHint";
 
 const cards = [
   {
