@@ -10,7 +10,7 @@ export function BrandLogo({ size = "md", showText = true, className = "" }: Bran
   const dims = {
     sm: { img: "h-10", name: "text-sm", tag: "text-[9px]" },
     md: { img: "h-14", name: "text-base", tag: "text-[10px]" },
-    lg: { img: "h-28 md:h-36", name: "text-2xl md:text-3xl", tag: "text-xs md:text-sm" },
+    lg: { img: "h-44 md:h-56", name: "text-2xl md:text-3xl", tag: "text-xs md:text-sm" },
   }[size];
 
   return (
