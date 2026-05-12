@@ -3,6 +3,7 @@ import planSelect from "@/assets/plan-select.png";
 import planSignature from "@/assets/plan-signature.png";
 import planPremium from "@/assets/plan-premium.png";
 import planElite from "@/assets/plan-elite.png";
+import planCorporate from "@/assets/office-luxury.jpg";
 
 const plans = [
   {
@@ -40,6 +41,13 @@ const plans = [
     items: ["Tudo do Premium incluído", "Automação residencial completa", "Integração total do imóvel", "Experiência sob medida"],
     highlighted: false,
   },
+  {
+    name: "Corporate",
+    badge: "Comercial",
+    image: planCorporate,
+    items: ["Projetos para escritórios e clínicas", "Mobiliário corporativo planejado", "Identidade visual integrada", "Gestão completa da obra comercial", "Soluções para recepção, salas e copa"],
+    highlighted: false,
+  },
 ];
 
 export function PlansSection() {
@@ -58,31 +66,31 @@ export function PlansSection() {
           <div className="w-20 h-px bg-gold/40 mx-auto mt-6" />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, i) => (
             <div
               key={i}
               className={`animate-on-scroll flex flex-col bg-surface border overflow-hidden transition-all duration-500 hover:border-gold/50 ${
-                plan.highlighted ? "border-gold/60 gold-border-glow lg:scale-105 relative" : "border-gold/15"
-              } ${i >= 3 ? "lg:col-span-1 sm:col-span-1" : ""}`}
-              style={{ transitionDelay: `${i * 100}ms` }}
+                plan.highlighted ? "border-gold/60 gold-border-glow lg:scale-[1.03] relative" : "border-gold/15"
+              }`}
+              style={{ transitionDelay: `${i * 80}ms` }}
             >
               {plan.highlighted && (
                 <div className="gold-gradient text-primary-foreground text-xs text-center py-1.5 tracking-[0.3em] uppercase font-body font-medium">
                   ★ {plan.badge}
                 </div>
               )}
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative h-72 overflow-hidden">
                 <img src={plan.image} alt={plan.name} className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/50 to-transparent" />
-                <div className="absolute bottom-3 left-5">
-                  <h3 className="font-heading text-2xl text-cream font-semibold">{plan.name}</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+                <div className="absolute bottom-4 left-5">
+                  <h3 className="font-heading text-3xl text-cream font-semibold drop-shadow-lg">{plan.name}</h3>
                   {!plan.highlighted && (
-                    <span className="text-xs tracking-[0.2em] text-gold/80 uppercase font-body">{plan.badge}</span>
+                    <span className="text-xs tracking-[0.2em] text-gold/90 uppercase font-body">{plan.badge}</span>
                   )}
                 </div>
               </div>
-              <div className="p-5 flex-1 flex flex-col">
+              <div className="p-6 flex-1 flex flex-col">
                 <ul className="space-y-2 flex-1 mb-5">
                   {plan.items.map((item, j) => (
                     <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground font-light">
