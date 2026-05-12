@@ -1,6 +1,5 @@
 import diff01 from "@/assets/diff-01.jpg";
 import diff02 from "@/assets/diff-02.jpg";
-import diffQuote from "@/assets/diff-quote.png";
 
 export function DifferentialsSection() {
   const cards = [
@@ -36,15 +35,18 @@ export function DifferentialsSection() {
 
           {/* Center quote card */}
           <div
-            className="animate-on-scroll bg-background border border-gold/30 overflow-hidden gold-border-glow flex items-center justify-center p-2"
+            className="animate-on-scroll bg-background border border-gold/30 gold-border-glow flex items-center justify-center p-10 text-center min-h-[28rem]"
             style={{ transitionDelay: "100ms" }}
           >
-            <img
-              src={diffQuote}
-              alt="Um único parceiro. Do início ao fim."
-              className="w-full h-full max-h-[36rem] object-cover"
-              loading="lazy"
-            />
+            <div>
+              <span className="text-gold text-3xl leading-none block mb-6">“</span>
+              <p className="font-heading italic text-2xl md:text-3xl gold-text-gradient leading-relaxed">
+                Um único parceiro.
+                <br />
+                Do início ao fim.
+              </p>
+              <div className="w-12 h-px bg-gold/60 mx-auto mt-8" />
+            </div>
           </div>
 
           {/* Right card */}
