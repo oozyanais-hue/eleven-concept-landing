@@ -2,11 +2,12 @@ import missionImg from "@/assets/mission-kitchen.jpg";
 import visionImg from "@/assets/vision-kitchen.jpg";
 import valuesImg from "@/assets/values-living.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { SwipeHint } from "@/components/SwipeHint";
 
 const cards = [
   {
     title: "Missão",
-    text: "Prover ao cliente uma experiência de reforma completa, integrada e sem complicações, reunindo projeto, gesso, marmoraria e móveis planejados sob uma gestão única e especializada — eliminando a necessidade de múltiplos fornecedores, garantindo excelência técnica em cada etapa e entregando ambientes que traduzem o mais alto padrão de qualidade, com o compromisso de que cada cliente viva sua transformação com segurança, agilidade e total tranquilidade.",
+    text: "Prover ao cliente uma experiência de reforma completa, integrada e sem complicações, reunindo projeto, gesso, marmoraria e móveis planejados sob uma gestão única e especializada, eliminando a necessidade de múltiplos fornecedores, garantindo excelência técnica em cada etapa e entregando ambientes que traduzem o mais alto padrão de qualidade, com o compromisso de que cada cliente viva sua transformação com segurança, agilidade e total tranquilidade.",
     image: missionImg,
   },
   {
@@ -82,6 +83,8 @@ export function MissionSection() {
             <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 bg-surface border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" />
             <CarouselNext className="hidden md:flex -right-4 md:-right-12 bg-surface border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" />
           </Carousel>
+          <SwipeHint />
+
         </div>
       </div>
     </section>

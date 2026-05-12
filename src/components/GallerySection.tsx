@@ -9,6 +9,7 @@ import g08 from "@/assets/gallery-08.jpg";
 import g09 from "@/assets/gallery-09.jpg";
 import g10 from "@/assets/gallery-10.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { SwipeHint } from "@/components/SwipeHint";
 
 const gallery = [
   { src: g01, label: "Cozinha Gourmet" },
@@ -64,6 +65,7 @@ export function GallerySection() {
             <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 bg-surface border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" />
             <CarouselNext className="hidden md:flex -right-4 md:-right-12 bg-surface border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" />
           </Carousel>
+          <SwipeHint />
         </div>
       </div>
     </section>
