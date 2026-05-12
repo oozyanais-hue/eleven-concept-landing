@@ -21,10 +21,10 @@ export function HeroSection() {
           <BrandLogo size="lg" showText={false} />
           <div className="w-16 h-px bg-gold mx-auto my-5 opacity-60" />
           <span className="font-heading text-2xl md:text-3xl text-cream tracking-[0.25em] uppercase font-medium">
-            Bella <span className="italic gold-text-gradient">Itália</span>
+            Eleven <span className="italic gold-text-gradient">Concept</span>
           </span>
           <span className="text-[10px] md:text-xs tracking-[0.5em] text-muted-foreground uppercase font-body mt-2">
-            Ambientes Personalizados
+            Móveis Planejados
           </span>
         </div>
 
