@@ -16,7 +16,6 @@ export function Navbar() {
     { label: "Sobre", href: "#missao" },
     { label: "Diferenciais", href: "#diferenciais" },
     { label: "Planos", href: "#planos" },
-    { label: "Depoimentos", href: "#depoimentos" },
     { label: "Contato", href: "#contato" },
   ];
 
