@@ -33,12 +33,12 @@ export function HeroSection() {
           <br />
           <span className="gold-text-gradient font-medium italic">ao nível 11</span>
           <span className="block text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light mt-4 not-italic">
-            — do projeto à entrega final
+           , do projeto à entrega final
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-cream/80 max-w-2xl mx-auto mb-10 font-body font-light leading-relaxed">
-          Pare de perder tempo com vários fornecedores — <span className="text-gold">nós resolvemos tudo para você</span>.
+          Pare de perder tempo com vários fornecedores, <span className="text-gold">nós resolvemos tudo para você</span>.
         </p>
 
         <button

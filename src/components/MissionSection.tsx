@@ -6,7 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 const cards = [
   {
     title: "Missão",
-    text: "Prover ao cliente uma experiência de reforma completa, integrada e sem complicações, reunindo projeto, gesso, marmoraria e móveis planejados sob uma gestão única e especializada — eliminando a necessidade de múltiplos fornecedores, garantindo excelência técnica em cada etapa e entregando ambientes que traduzem o mais alto padrão de qualidade, com o compromisso de que cada cliente viva sua transformação com segurança, agilidade e total tranquilidade.",
+    text: "Prover ao cliente uma experiência de reforma completa, integrada e sem complicações, reunindo projeto, gesso, marmoraria e móveis planejados sob uma gestão única e especializada, eliminando a necessidade de múltiplos fornecedores, garantindo excelência técnica em cada etapa e entregando ambientes que traduzem o mais alto padrão de qualidade, com o compromisso de que cada cliente viva sua transformação com segurança, agilidade e total tranquilidade.",
     image: missionImg,
   },
   {

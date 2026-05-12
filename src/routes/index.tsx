@@ -14,9 +14,9 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Eleven Concept — Móveis Planejados de Alto Padrão" },
+      { title: "Eleven Concept, Móveis Planejados de Alto Padrão" },
       { name: "description", content: "Móveis planejados e projetos completos de alto padrão. Do design à entrega, sem intermediários. Eleven Concept." },
-      { property: "og:title", content: "Eleven Concept — Móveis Planejados de Alto Padrão" },
+      { property: "og:title", content: "Eleven Concept, Móveis Planejados de Alto Padrão" },
       { property: "og:description", content: "Móveis planejados e projetos completos de alto padrão. Do design à entrega, sem intermediários." },
     ],
   }),

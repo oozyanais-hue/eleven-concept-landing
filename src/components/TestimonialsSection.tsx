@@ -9,27 +9,27 @@ const testimonials = [
   {
     quote: "A Eleven Concept transformou nosso apartamento em algo que nem imaginávamos ser possível. Cada detalhe foi pensado com um cuidado que impressiona.",
     name: "Mariana e Rafael Fontana",
-    project: "Apartamento 3 dormitórios — Alphaville",
+    project: "Apartamento 3 dormitórios, Alphaville",
     image: heroImg,
   },
   {
     quote: "Desde o primeiro contato até a entrega, tudo foi impecável. O nível de atenção e sofisticação é incomparável. Recomendo de olhos fechados.",
     name: "Dr. Henrique Meirelles",
-    project: "Cobertura duplex — Jardins",
+    project: "Cobertura duplex, Jardins",
     image: diningImg,
   },
   {
     quote: "Ter um parceiro único que cuida de tudo, do piso ao último detalhe de marcenaria, nos deu uma tranquilidade que não tem preço.",
     name: "Carolina Duarte",
-    project: "Casa em condomínio — Granja Viana",
+    project: "Casa em condomínio, Granja Viana",
     image: closetImg,
   },
 ];
 
 const beforeAfter = [
-  { src: hallwayImg, label: "Projeto Hall — Entregue" },
-  { src: poolImg, label: "Área de Lazer — Entregue" },
-  { src: wineCellarImg, label: "Adega Personalizada — Entregue" },
+  { src: hallwayImg, label: "Projeto Hall, Entregue" },
+  { src: poolImg, label: "Área de Lazer, Entregue" },
+  { src: wineCellarImg, label: "Adega Personalizada, Entregue" },
 ];
 
 export function TestimonialsSection() {
