@@ -83,6 +83,8 @@ export function MissionSection() {
             <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 bg-surface border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" />
             <CarouselNext className="hidden md:flex -right-4 md:-right-12 bg-surface border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" />
           </Carousel>
+          <SwipeHint />
+
         </div>
       </div>
     </section>
