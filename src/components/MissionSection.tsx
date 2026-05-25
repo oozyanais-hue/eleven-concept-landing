@@ -7,12 +7,12 @@ import { SwipeHint } from "@/components/SwipeHint";
 const cards = [
   {
     title: "Missão",
-    text: "Prover ao cliente uma experiência de reforma completa, integrada e sem complicações, reunindo projeto, gesso, marmoraria e móveis planejados sob uma gestão única e especializada, eliminando a necessidade de múltiplos fornecedores, garantindo excelência técnica em cada etapa e entregando ambientes que traduzem o mais alto padrão de qualidade, com o compromisso de que cada cliente viva sua transformação com segurança, agilidade e total tranquilidade.",
+    text: "Transformar sonhos em ambientes completos, sofisticados e funcionais, entregando uma experiência única do projeto à execução. Na Eleven Concept, cuidamos de cada detalhe, do gesso à iluminação, da marmoraria aos móveis planejados, para que nossos clientes recebam seu apartamento pronto para viver, sem dor de cabeça e com excelência em cada etapa.",
     image: missionImg,
   },
   {
     title: "Visão",
-    text: "Ser referência em móveis planejados e decoração, reconhecida por sofisticação, exclusividade e excelência no atendimento.",
+    text: "Ser referência nacional em soluções completas para interiores, revolucionando o mercado de planejados através de uma experiência premium, transparente e sem complicações, elevando cada ambiente ao nível 11.",
     image: visionImg,
   },
   {
@@ -20,9 +20,12 @@ const cards = [
     text: "",
     image: valuesImg,
     values: [
-      { name: "Exclusividade Absoluta", desc: "Cada projeto é uma obra única" },
-      { name: "Design Autoral", desc: "Identidade, elegância e originalidade" },
-      { name: "Relacionamento de Alto Nível", desc: "Atendimento próximo, discreto e personalizado" },
+      { name: "Excelência em cada detalhe", desc: "Buscamos perfeição em cada projeto, acabamento e atendimento, valorizando qualidade acima do comum." },
+      { name: "Compromisso com o cliente", desc: "Somos o braço direito do cliente durante toda a jornada, oferecendo segurança, suporte e confiança do início ao fim." },
+      { name: "Experiência sem dor de cabeça", desc: "Nosso propósito é simplificar o processo, centralizando tudo em um único lugar para entregar praticidade e tranquilidade." },
+      { name: "Inovação e conceito", desc: "Criamos ambientes modernos, inteligentes e exclusivos, sempre elevando o padrão do mercado." },
+      { name: "Transparência e responsabilidade", desc: "Prezamos pela clareza em cada etapa, cumprindo prazos, alinhamentos e expectativas com seriedade." },
+      { name: "Sonhos que saem do papel", desc: "Mais do que vender planejados, realizamos projetos de vida e transformamos ambientes em experiências." },
     ],
   },
 ];
